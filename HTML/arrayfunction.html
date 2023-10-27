@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         <!--how to know saved items in array fucntions
+   <input type="text" id="textbox"placeholder="enter value">
+    <br>
+    <button onclick="additem()">additems</button>
+    <br>
+    <button onclick="viewitems()">viewitems</button>
+    <br>
+    <output id="res"></output>
+    <script>
+       
+        const data=[];
+        let index=0;
+         function additem()//additem button function
+         {
+            data[index]=textbox.value; //input type function
+            index++;//adding vlues
+            textbox.value='';//it will clear values
+            textbox.focus();
+            //cursor requssting
+
+        }
+         function viewitems(){
+           // out put values
+           res.value='items you added:'+data;
+         }--> 
+
+
+
+         
+ /*samll exaple on array
+        let string='some name';
+        for(let i=0; i<string.length;i++){
+            document.write(`${string[i]}<br>`);
+        }*/
+        // array unshift()
+       /*let eles =[50];
+       eles.unshift(10);      //whatever number you add it comes to the last in row
+       eles.unshift(20);
+       eles.unshift(30);
+       eles.unshift(40);
+       for(let x of eles){
+        document.write(`${x}<br>`);}*/
+
+
+        //includes
+  const array=[10,20,30,40,50,60,70,80,90];
+ console.log(`include1=>${array.includes(30)}<br>`);
+ console.log(`include2=>${array.includes(200)}<br>`);
+  //indexof
+  let str='simla green apples';
+  console.log(`str=>${str.includes('green')}<br>`);
+  console.log(`index of 30${array.indexOf(4)}<br>`);
+  //last index
+  console.log(`lastindex of 30${array.lastIndexOf(30)}<br>`);
+  //reverse
+  array.reverse();
+  console.log(`reverse=>${array}`);
+  
+  //array.sort
+  array.sort();
+  console.log(`sort=>${array}`);
+const names=["red",'yellow','green'];
+console.log(`names=>${names}`);
+names.sort();
+console.log(`sort=>${names}`);
+//join methods
+console.log(`names=>${names.join('&#12345')}`);
+
+
+
+
+/* //array destructuring
+const a=[10,20,30];
+let[x,y,z]=a;//destrucutring
+document.write(`a${a}<br>`);
+document.write(`x${x}<br>y  ${y}<br>z   ${z}`);
+document.write('<br>')
+const data=['html','css','javascript','bootsstrap'];
+let[e,f,g,h]=data;
+document.write(`data${data}<br>`);
+document.write(`e=>${e}<br>`);
+document.write(`f=>${f}<br>g=> ${g}<br>h=> ${h}`);*/
+
+
+    </script>
+</body>
+</html>

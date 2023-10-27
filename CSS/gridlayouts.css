@@ -1,0 +1,52 @@
+#grid-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-areas: "logo nav nav"
+    "Banner Banner Banner"
+    "content1 content2 content3"
+    "footer footer footer"; */
+    
+}
+#grid-parent .grid-child{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    min-height: 150px;
+    border: 2px solid white;
+}
+#grid-parent .grid-logo{
+    /* method one */
+   /* grid-area: logo; */
+   /* method two */
+   /* grid-column-start: 1;
+   grid-column-end: 1; */
+   /* method three */
+   grid-column: 1/1;
+}
+#grid-parent .grid-nav{
+    /* grid-area: nav; */
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    grid-column: 2/4;
+}
+#grid-parent .grid-Banner{
+    /* grid-area: Banner; */
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1/4;
+}
+#grid-parent .grid-Content1{
+    /* grid-area: content1; */
+}
+#grid-parent .grid-Content2{
+    /* grid-area: content2; */
+}
+#grid-parent .grid-Content3{
+    /* grid-area: content3; */
+}
+#grid-parent .grid-Footer{
+    /* grid-area: footer; */
+     /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1/4;
+}

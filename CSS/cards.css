@@ -1,0 +1,42 @@
+
+*{
+    background-color: #e3e3e6e6;
+    font-family: sans-serif;
+}
+.parent-card{
+    display: flex;
+    gap: 10px;
+
+}
+.child-card{
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0;
+    padding: 20px;
+    border-radius: 15px;
+    /* flex: 1; */
+}
+.child-card h2{
+    background-color: #fff;
+    font-size: 21px;
+    text-align: center;
+}
+/*  for the image container perfect alignment use display grid*/
+.inner-card{
+    display: grid;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    background-color: #fff;
+}
+
+.inner-card div{
+   text-align: center;
+   background-color: #fff;
+}
+.inner-card img{
+    
+    width: 140px;
+    height: 100px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object literals
+       let stud={rno:1,name:'some name',total:360,//props
+           getResult:function(){
+            if(stud.total>=400)
+            return"pass";
+             else
+             "fail"}
+           };
+           
+           document.write(`roll no:${stud.rno}<br>`);
+           document.write(`name:${stud.name}<br>`);
+           document.write(`total:${stud.total}<br>`);
+           document.write(`Result:${stud.getResult()}<br>`);
+
+
+
+/*objects
+ const ob={x:20,y:20,z:30};
+ console.log(`keys =>${Object.values(ob)}`)
+ //const vals=Object.values(ob);*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* #grid-parent{
+    margin: 50px 50px;
+    background-color: black;
+    padding: 30px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.grid-child{
+    background-color: yellow;
+    min-height: 100px;
+    padding: 1px;
+    border: 10px solid green;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+} */

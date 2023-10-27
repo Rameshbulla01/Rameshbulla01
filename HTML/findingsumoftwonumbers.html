@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    FINDING THE SUM OF BITWEEN TWO NUMBERS
+    <labe>first number</labe>
+    <input type="text" id="firstnum">
+    <label>secound number</label>
+    <input type="text"id='secnum'>
+    <button onclick="addition()">sum</button>
+    <output id="op"></output>
+    <script>
+        function addition(){
+            let x,y,res;
+            x=parseFloat(firstnum.value);
+            y=parseFloat(secnum.value);
+            res=x+y;
+            op.value='sum is'+res;
+        }
+        console.log('sum is'+res);
+        </script> 
+</body>
+</html>

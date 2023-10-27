@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+         div{
+    width: 200px;
+    height: 230;;
+    background: cyan;
+    color: rgb(30, 52, 195);
+    border-radius: 25px;
+    box-shadow: 1px 1px 20px blue;
+    margin: auto;
+    padding: 20px;
+}
+input{
+    border: 0px;
+    outline: 0;
+    background-color:cyan;
+    color: black;
+    border-bottom: 3px solid blue;
+}
+button{
+    width: 160px;
+    height: 30px;
+    border-radius: 20px;
+    color: blue;
+    background-color: cyan;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bolder;   
+}
+button:hover{
+    cursor: pointer;
+}
+output{
+    color: red;
+}
+
+    </style>
+
+</head>
+<body>
+    <div>
+		<h2 align="center"><u>Interest Calc</u></h2>
+		<p>
+			<label>Principal Amount</label> <br>
+			<input type="text" id="pamt" autofocus> <span>&#8377;</span>
+		</p>
+		<p>
+			<label>Time</label> <bR>
+			<input type="text" id="time"> <span>Year(s)</span>
+		</p>
+		<p>
+			<label>Rate of Interest</label> <br>
+			<input type="text" id="roi"> <span>%</span>
+		</p>
+		<p align="center">
+			<button onclick="getAmount()">calc interest</button>
+		</p>
+		<p>
+			<output id="interest"></output> <br>
+			<output id="totalAmt"></output>
+		</p>
+	</div>
+
+
+    <script>
+        function getAmount()
+{
+	let p, t, r, si, tamt;	//local vars
+	p = pamt.value;		//data coll from input eles
+	t = time.value;
+	r = roi.value;
+	//calc's
+	si = p*t*r/100;
+	tamt = parseFloat(p)+si;
+	//display op's
+	interest.value="Interest Amount :"+si;
+	totalAmt.value="Total Amount		:"+tamt;
+}
+    </script>
+
+    <!--prototypes expales-->
+<script>        
+    const p={name:'soap',unitprice:50,qty:5};//it was an objects
+</script>
+<script>
+    //a new properties for already exiting things for objects upper 
+    Object.prototype.gst=14;
+    Object.prototype.discount=4;
+    //adding new methods to objects
+ Object.prototype.getamount=function(){
+  amt=this.qty*this.unitprice;
+  gstamt=amt*this.gst/100;
+  da=amt*this.discount/100;
+  return amt+gstamt-da;
+ };
+ document.write(`name=>${p.name}<br>`);
+ document.write(`qty=>${p.qty}<br>`);
+ document.write(`unitprice=>${p.unitprice}<br>`);
+ document.write(`Total amount=>${p.getamount()}<br>`);
+</script>*/
+</body>
+</html>

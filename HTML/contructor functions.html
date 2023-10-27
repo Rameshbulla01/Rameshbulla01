@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function book()
+        {
+            this.title="some book";
+            this.author="some";
+            this.price=400;
+           
+        }
+        const b1 =new book();
+        document.write(b1.title,b1.price,b1.author);
+        document.write('<br>')
+        const b2=new book();
+        document.write(b1.title,b1.price,b1.author);
+
+        // METHOD 2 
+       function book(title,author,price)
+       {
+        this.title=title;
+        this.author=author;
+        this.price=price;
+       }
+       const b1=new book('title name','athor name',400);
+       document.write(b1.title,b1.price,b1.author);
+       </script>
+
+       <script>
+            /*ARRAY OBJECTS
+     function book(title,author,price)
+     {
+     this.title=title;
+     this.author=author;
+     this.price=price;
+     }
+     const b1=new book('title name','athor name', 400);      
+     document.write(b1.title,b1.price,b1.author);*/
+    
+
+     //object literals
+      let ob = {
+     'rno':1,"name":'some name',"course":"html"
+       }
+         document.write(ob);
+         document.write('${ob.rno}')
+ 
+       </script>
+
+</body>
+</html>
